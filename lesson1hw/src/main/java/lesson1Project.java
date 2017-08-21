@@ -19,7 +19,7 @@ public class lesson1Project {
 
         if (r == true) System.out.println("Задача выполнена.");
         else System.out.println("Задача не выполнена.");
-        //scanner.close();
+        scanner.close();
     }
 
     public static boolean task1(){
@@ -39,6 +39,7 @@ public class lesson1Project {
         System.out.println(c);
         System.out.println(z);
         System.out.println(answer);
+        scanner.close();
         return true;
     }
 
@@ -71,8 +72,9 @@ public class lesson1Project {
 
         System.out.print("Введите слово из второго предложения, которое перенесем в третье предложение: ");
         String wordInNewStr = scanner.next();
-        String result2 = String.format("Слово, которое вы выбрали '%s'",copyWordInNewStr(result,wordInNewStr));
+        String result2 = String.format("Слово, которое вы выбрали, '%s'",copyWordInNewStr(result,wordInNewStr));
         System.out.println(result2);
+        scanner.close();
         return true;
     }
 
