@@ -97,12 +97,7 @@ public class lesson2Project {
     public static boolean task3RepeatCount(int[] array){
         int count = 0;
         int element = 0;
-        int countRav = 0;
-        int countMax = 0;
         int tmp=0;
-
-        boolean no_max = false;
-        //int[] ar = new int[10];
 
         for (int k:array
              ) {
@@ -112,37 +107,13 @@ public class lesson2Project {
                     tmp++;
                 }
             }
-            if(tmp>count){
-                //no_max = false;
-                //countMax++;
+            if(tmp>count) {
                 element = k;
                 count = tmp;
             }
-
         }
-        /*for(int i = 0; i<array.length; i++){
-            int tmp=0;
-            for (int j = 0; j<array.length; j++){
-                if (array[i]==array[j]) {
-                    tmp++;
-                }
-            }
-
-            if(tmp>count){
-                //no_max = false;
-                countMax++;
-                element = array[i];
-                count = tmp;
-            }
-            else if (tmp==count) countRav++;
-        }*/
         System.out.println(format("Наибольшее количество раз повторяется элемент '%s': %s повторений.",element, count));
-        //if (countMax>1) System.out.println(format("Наибольшее количество раз повторяется элемент '%s': %s повторений.",element, count));
-        //else if (countMax == countRav) System.out.println(format("Есть элементы, повторяющиеся одинаковое количество раз."));
-        //if (no_max){
-          //  System.out.println(format("Элементы повторяются одинаковое количество раз."));
-        //}
-        //else System.out.println(format("Наибольшее количество раз повторяется элемент '%s': %s повторений.",element, count));
+
         return true;
     }
 
